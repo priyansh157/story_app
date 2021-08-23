@@ -1,0 +1,52 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary">
+
+<RelativeLayout
+    android:id="@+id/heading"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="30dp">
+
+    <TextView
+        android:id="@+id/heading_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Top Picks"
+        android:textColor="@color/colorWhite"
+        android:layout_marginLeft="20dp"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+    <TextView
+        android:id="@+id/see_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="See All"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:layout_alignParentRight="true"
+        android:textColor="#2196F3"
+        android:textSize="15sp"
+        android:layout_marginRight="15dp"
+        android:layout_centerVertical="true"/>
+
+</RelativeLayout>
+
+<RelativeLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_below="@id/heading"
+android:layout_marginTop="10dp">
+
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/horizontalRecycler"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+
+</RelativeLayout>
+
+</RelativeLayout>

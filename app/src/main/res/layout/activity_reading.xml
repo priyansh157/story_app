@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:id="@+id/reader_card_view"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_margin="10dp"-->
+<!--        app:cardCornerRadius="2dp"-->
+<!--        app:cardBackgroundColor="@color/colorBloodRed">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/story_title"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            tools:text="The Woman in the woods"-->
+<!--            android:textColor="@color/colorWhite"-->
+<!--            android:padding="10dp"-->
+<!--            android:textSize="20sp"-->
+<!--            android:textStyle="bold"-->
+<!--            android:layout_gravity="center_horizontal"/>-->
+<!--    </androidx.cardview.widget.CardView>-->
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="vertical">
+
+<RelativeLayout
+    android:id="@+id/story_main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/reader_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:src="@drawable/storytest"
+        android:adjustViewBounds="true"
+        android:layout_margin="10dp"/>
+    <TextView
+        android:id="@+id/story_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="The woman in the woods who fall int love with a guy who loves to have a party"
+        android:textAlignment="center"
+        android:layout_below="@id/reader_image"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="15dp"
+        android:textColor="@color/colorWhite"
+        android:textSize="50sp"
+        android:fontFamily="@font/aice_font_family"/>
+    <TextView
+        android:id="@+id/reader_story"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/story_title"
+        android:layout_margin="20dp"
+        android:fontFamily="@font/aice_font_family"
+        android:textSize="20sp"
+        tools:text="@string/story"
+        android:textColor="@color/colorWhite"/>
+    <ProgressBar
+        android:visibility="invisible"
+        android:id="@+id/reader_progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/story_title"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>
+</ScrollView>
+    <RelativeLayout
+        android:id="@+id/story_floating_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="30dp">
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/story_audio_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/play_arrow"/>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/story_zoom_in"
+            app:fabSize="mini"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/story_audio_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/zoom_in"
+            tools:ignore="RelativeOverlap" />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/story_zoom_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/story_audio_play"
+            app:fabSize="mini"
+            android:src="@drawable/zoom_out"/>
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "668560150198",
+    "project_id": "story-app-e13c5",
+    "storage_bucket": "story-app-e13c5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:668560150198:android:47b33b81725b1d3f3a6017",
+        "android_client_info": {
+          "package_name": "com.story.storyapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "668560150198-u34v94vqjrk19p7mcd31dvsh43pi9til.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAoTLXWJPJzB8vXXN0LyzBUsOOhgyoxfdI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "668560150198-u34v94vqjrk19p7mcd31dvsh43pi9til.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
